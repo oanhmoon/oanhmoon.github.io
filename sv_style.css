@@ -1,0 +1,251 @@
+
+header {
+    background-color: white;
+    color: #DF1C12;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 50px;
+}
+#name{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.search-bar {
+    margin-top: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+header > .tren {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .tren > .logo {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+
+
+header > .tren > .login {
+    width: 10%;
+    height: 100%;
+    text-align: right;
+}
+
+header > .tren > .register {
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+form button {
+    background-color: #DF1C12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nút đăng nhập */
+form button:hover {
+    background-color: #B60D0D;
+}
+
+header > .menu {
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    background-color: #DF1C12;
+    color: white;
+}
+
+.menu nav li:hover {
+    color: white; /* Màu sắc khi hover */
+    background:#B60D0D;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển động màu khi hover */
+}
+
+/**footer**/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.footer-section {
+    flex: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+.footer-section img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+/* main */
+h1,.notice{
+    text-align: center;
+    font-weight: bold;
+    color: #B60D0D;
+    margin:30px auto;
+}
+.search-bar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search{
+    --padding:24px;
+    width:max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--padding);
+    border-radius: 20px;
+    background: #f6f6f6;
+    width: 600px;
+}
+
+.search-input{
+    font-size: 16px;
+    font-family: 'Lexend';
+    color: #33333333;
+    margin-left:var(--padding);
+    background: transparent;
+    width: 600px;
+    border: none;
+    /* flex:1; */
+}
+.search-input::placeholder{
+    color: rgba(0,0,0,0.25);
+}
+.results ,.detail{
+    width: 1000px;
+    min-height: 300px;
+    max-height: 600px;
+    background-color: white;
+    margin: 20px auto;
+    overflow-y: auto;
+}
+#searchBtn{
+    padding: 20px 20px;
+    border-radius: 35px;
+}
+.stu-inf{
+    display:inline;
+    text-align: left;
+    font-weight: bold;
+    margin-top:50px ;
+    padding: 10px ;
+    color: black;
+}
+.exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 40px 40px;
+    /* margin: 30px 50px; */
+  }
+  
+.exam-table th, .exam-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+.exam-table th {
+    background-color: #e7aaaa;
+  }
+  
+.exam-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+.details-button{
+    padding: 5px 10px;
+    border-radius: 10px;
+  }
+
+.export-pdf-button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border:none;
+    border-radius: 5px; 
+    cursor: pointer; /* Con trỏ khi rê chuột vào */
+
+    display: none;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    font-size: 16px; 
+    margin :20px 300px;
+}
+
+.export-pdf-button:hover {
+    background-color: #45a049; /* Màu nền khi rê chuột vào */
+}

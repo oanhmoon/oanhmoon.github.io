@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chỉnh sửa bài thi</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  h1{
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="tren">
+        <div class="logo">
+            <table>
+                <tbody><tr>
+                    <td>
+                        <img src="image/logo.png" alt="Logo" style="height: 100px;">
+                    </td>
+                    <td style="text-align: left; color: black;">
+                        <p id="name">
+                            Posts and Telecommunications Institute of Technology
+                        </p>
+                        Hệ thống thi trắc nghiệm trực tuyến PTIT
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+  </header>
+  <main>
+<h1>Chỉnh sửa thông tin bài thi</h1>
+<form id="editExamForm">
+  <label for="examName">Tên bài thi:</label>
+  <input type="text" id="examName" name="examName">
+
+  <label for="examType">Kiểu bài thi:</label>
+  <select id="examType" name="examType">
+    <option value="midterm">Luyện tập</option>
+    <option value="midterm">Giữa kì</option>
+    <option value="final">Cuối kì</option>
+  </select>
+
+  <label for="examTime">Thời gian:</label>
+  <input type="text" id="examTime" name="examTime">
+
+  <label for="examSchedule">Kiểu thi:</label>
+  <select id="examSchedule" name="examSchedule">
+    <option value="free">Tự do</option>
+    <option value="scheduled">Đã lên lịch</option>
+  </select>
+
+  <h2>Thay đổi nội dung câu hỏi</h2>
+  <label for="questionNumber">Câu hỏi số:</label>
+  <input type="text" id="questionNumber" name="questionNumber">
+
+  <label for="questionContent">Nội dung câu hỏi:</label>
+  <textarea id="questionContent" name="questionContent"></textarea>
+
+  <label for="answerA">Câu trả lời A:</label>
+  <input type="text" id="answerA" name="answerA">
+  <label for="answerB">Câu trả lời B:</label>
+  <input type="text" id="answerB" name="answerB">
+  <label for="answerC">Câu trả lời C:</label>
+  <input type="text" id="answerC" name="answerC">
+  <label for="answerD">Câu trả lời D:</label>
+  <input type="text" id="answerD" name="answerD">
+
+  <label for="correctAnswer">Đáp án đúng:</label>
+  <select id="correctAnswer" name="correctAnswer">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+  </select>
+
+  <input type="submit" value="Lưu">
+</form>
+  </main>
+  <footer>
+    <div class="footer-section">
+        <h2>Liên Hệ</h2>
+        <p>Email: nhom12web@gmail.com</p>
+        <p>Điện thoại: (123) 456-7890</p>
+    </div>
+    <div class="footer-section">
+        <h2>Hỗ Trợ</h2>
+        <p>Email: support12@gmail.com</p>
+        <p>Hotline: 24/7</p>
+    </div>
+    <div class="footer-section">
+        <h2>Giải Đáp</h2>
+        <p>Xem FAQ hoặc liên hệ trực tiếp.</p>
+    </div>
+    <div class="footer-section">
+        <h2>Địa Chỉ</h2>
+        <p>Km10, Nguyễn Trãi, Hà Đông, Hà Nội</p>
+    </div>
+    <div class="footer-section">
+        <h2>Face</h2>
+        <a href="https://www.facebook.com/example" target="_blank">
+            <img src="image/face-icon.jpg" alt="Facebook">
+        </a>
+    </div>
+  </footer> 
+</body>
+</html>
