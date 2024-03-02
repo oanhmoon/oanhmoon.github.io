@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quản lý Bài thi trắc nghiệm</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .container a{
+    font-size: 20px;
+    text-decoration: none;
+
+  }
+  .button{
+    display: inline-block;
+        padding: 10px 20px;
+        background-color: red;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+  }
+  main{
+    height: 550px;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="tren">
+        <div class="logo">
+            <table>
+                <tbody><tr>
+                    <td>
+                        <img src="image/logo.png" alt="Logo" style="height: 100px;">
+                    </td>
+                    <td style="text-align: left; color: black;">
+                        <p id="name">
+                            Posts and Telecommunications Institute of Technology
+                        </p>
+                        Hệ thống thi trắc nghiệm trực tuyến PTIT
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <div class="login">
+            <form action="login1.html">
+                <button type="submit">Đăng nhập</button>
+            </form>
+        </div>
+        <div class="register">
+            <form action="register.html">
+                <button type="submit">Đăng ký</button>
+            </form>
+        </div>
+    </div>
+    <div class="menu">
+        <nav>
+            <ul>
+                <li>
+                    <a href="tao1.html">Thêm bài thi</a>
+                </li>
+                
+                <li>
+                    <a href="chinh.html">Trang chủ</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>
+  <main>
+<div class="container">
+  <h2>Danh sách Bài thi trắc nghiệm</h2>
+  
+  <br>
+  <br>
+  <label for="filterType">Lọc bài thi:</label>
+  <br>
+
+  <select id="filterType" onchange="filterExams()">
+    <option value="">Tất cả</option>
+    <option value="Luyện tập">Luyện tập</option>
+    <option value="Giữa kì">Giữa kì</option>
+    <option value="Cuối kì">Cuối kì</option>
+  </select>
+  <br>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Bài thi môn</th>
+        <th>Kiểu bài</th>
+        <th>Thời gian</th>
+        <th>Ngày thi</th>
+        <th>Thao tác</th>
+      </tr>
+    </thead>
+    <tbody id="examList">
+      <!-- Các bài thi sẽ được hiển thị ở đây -->
+    </tbody>
+  </table>
+</div>
+</main>
+<script src="chitiet.js">
+</script>
+<footer>
+  <div class="footer-section">
+      <h2>Liên Hệ</h2>
+      <p>Email: nhom12web@gmail.com</p>
+      <p>Điện thoại: (123) 456-7890</p>
+  </div>
+  <div class="footer-section">
+      <h2>Hỗ Trợ</h2>
+      <p>Email: support12@gmail.com</p>
+      <p>Hotline: 24/7</p>
+  </div>
+  <div class="footer-section">
+      <h2>Giải Đáp</h2>
+      <p>Xem FAQ hoặc liên hệ trực tiếp.</p>
+  </div>
+  <div class="footer-section">
+      <h2>Địa Chỉ</h2>
+      <p>Km10, Nguyễn Trãi, Hà Đông, Hà Nội</p>
+  </div>
+  <div class="footer-section">
+      <h2>Face</h2>
+      <a href="https://www.facebook.com/example" target="_blank">
+          <img src="image/face-icon.jpg" alt="Facebook">
+      </a>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+

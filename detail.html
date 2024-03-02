@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chi tiết Bài thi trắc nghiệm</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .question {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .question h3 {
+    margin-top: 0;
+  }
+  .answers {
+    margin-top: 10px;
+  }
+  .answer {
+    margin-bottom: 5px;
+  }
+  button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="tren">
+        <div class="logo">
+            <table>
+                <tbody><tr>
+                    <td>
+                        <img src="image/logo.png" alt="Logo" style="height: 100px;">
+                    </td>
+                    <td style="text-align: left; color: black;">
+                        <p id="name">
+                            Posts and Telecommunications Institute of Technology
+                        </p>
+                        Hệ thống thi trắc nghiệm trực tuyến PTIT
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+  </header>
+<div class="container">
+  <h2>Chi tiết Bài thi trắc nghiệm</h2>
+  <div id="examDetail">
+    <!-- Thông tin chi tiết bài thi sẽ được hiển thị ở đây -->
+  </div>
+  <button onclick="addQuestion()">Thêm câu hỏi</button>
+</div>
+
+<script src="detail.js"></script>
+<footer>
+  <div class="footer-section">
+      <h2>Liên Hệ</h2>
+      <p>Email: nhom12web@gmail.com</p>
+      <p>Điện thoại: (123) 456-7890</p>
+  </div>
+  <div class="footer-section">
+      <h2>Hỗ Trợ</h2>
+      <p>Email: support12@gmail.com</p>
+      <p>Hotline: 24/7</p>
+  </div>
+  <div class="footer-section">
+      <h2>Giải Đáp</h2>
+      <p>Xem FAQ hoặc liên hệ trực tiếp.</p>
+  </div>
+  <div class="footer-section">
+      <h2>Địa Chỉ</h2>
+      <p>Km10, Nguyễn Trãi, Hà Đông, Hà Nội</p>
+  </div>
+  <div class="footer-section">
+      <h2>Face</h2>
+      <a href="https://www.facebook.com/example" target="_blank">
+          <img src="image/face-icon.jpg" alt="Facebook">
+      </a>
+  </div>
+</footer>
+</body>
+</html>
+
