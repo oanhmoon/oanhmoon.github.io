@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chỉnh sửa thông tin sinh viên</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS cho giao diện */
+    form {
+        margin: 20px;
+        max-width: 400px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        background-color: red;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    main{
+        height: 550px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="tren">
+            <div class="logo">
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <img src="images/logo.png" alt="Logo" style="height: 100px;">
+                        </td>
+                        <td style="text-align: left; color: black;">
+                            <p id="name">
+                                Posts and Telecommunications Institute of Technology
+                            </p>
+                            Hệ thống thi trắc nghiệm trực tuyến PTIT
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+      </header>
+    <main>
+<h1>Chỉnh sửa thông tin sinh viên</h1>
+
+<form id="editStudentForm">
+    <label for="fullName">Họ và tên:</label>
+    <input type="text" id="fullName" name="fullName" required>
+
+    <label for="studentID">Mã sinh viên:</label>
+    <input type="text" id="studentID" name="studentID" required>
+
+    <label for="className">Lớp:</label>
+    <input type="text" id="className" name="className" required>
+
+    <input type="submit" value="Lưu thông tin">
+</form>
+</main>
+<script>
+    // Lấy thông tin sinh viên từ URL query string (nếu có)
+    var queryString = window.location.search;
+    var urlParams = new URLSearchParams(queryString);
+    var studentID = urlParams.get('id'); // Lấy mã sinh viên từ query string
+
+    // Truy cập và hiển thị thông tin sinh viên cần chỉnh sửa
+    var studentToEdit = getStudentInfo(studentID);
+    document.getElementById("fullName").value = studentToEdit.name;
+    document.getElementById("studentID").value = studentToEdit.id;
+    document.getElementById("className").value = studentToEdit.className;
+
+    // Xử lý sự kiện khi form được nộp
+    document.getElementById("editStudentForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+        // Lấy giá trị từ các trường input
+        var fullName = document.getElementById("fullName").value;
+        var studentID = document.getElementById("studentID").value;
+        var className = document.getElementById("className").value;
+
+        // Thực hiện các xử lý tiếp theo ở đây, ví dụ: gửi dữ liệu đến máy chủ, cập nhật trong cơ sở dữ liệu, vv.
+
+        // Hiển thị thông báo hoặc chuyển hướng sau khi chỉnh sửa thành công
+        alert("Chỉnh sửa sinh viên thành công!");
+        // Điều hướng về trang trước (danh sách sinh viên)
+        history.back();
+    });
+
+    // Hàm để lấy thông tin sinh viên cần chỉnh sửa (ở thực tế, bạn sẽ thay thế phần này bằng logic lấy dữ liệu từ cơ sở dữ liệu)
+    function getStudentInfo(studentID) {
+        // Giả sử ta có một danh sách sinh viên ở đây
+        var students = [
+            { name: "Nguyễn Văn A", id: "B21DCCN001", className: "12A" },
+            { name: "Trần Thị B", id: "B21DCCN002", className: "12B" }
+        ];
+
+        // Lặp qua danh sách sinh viên để tìm sinh viên có mã sinh viên tương ứng
+        for (var i = 0; i < students.length; i++) {
+            if (students[i].id === studentID) {
+                return students[i];
+            }
+        }
+
+        // Trong trường hợp không tìm thấy sinh viên, bạn có thể xử lý thông báo hoặc chuyển hướng tùy thuộc vào yêu cầu của bạn
+        alert("Không tìm thấy sinh viên với mã sinh viên đã cho!");
+        history.back(); // Quay lại trang trước (danh sách sinh viên)
+    }
+</script>
+<footer>
+    <div class="footer-section">
+        <h2>Liên Hệ</h2>
+        <p>Email: nhom12web@gmail.com</p>
+        <p>Điện thoại: (123) 456-7890</p>
+    </div>
+    <div class="footer-section">
+        <h2>Hỗ Trợ</h2>
+        <p>Email: support12@gmail.com</p>
+        <p>Hotline: 24/7</p>
+    </div>
+    <div class="footer-section">
+        <h2>Giải Đáp</h2>
+        <p>Xem FAQ hoặc liên hệ trực tiếp.</p>
+    </div>
+    <div class="footer-section">
+        <h2>Địa Chỉ</h2>
+        <p>Km10, Nguyễn Trãi, Hà Đông, Hà Nội</p>
+    </div>
+    <div class="footer-section">
+        <h2>Face</h2>
+        <a href="https://www.facebook.com/example" target="_blank">
+            <img src="images/face-icon.jpg" alt="Facebook">
+        </a>
+    </div>
+  </footer>
+</body>
+</html>

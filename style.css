@@ -1,0 +1,138 @@
+header {
+    background-color: white;
+    color: #DF1C12;
+    padding: 15px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 50px;
+}
+#name{
+    font-size: 20px;
+    font-weight: bold;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+img{
+    width: 150px;
+    height:auto;
+}
+#name{
+    font-size: 30px;
+    font-weight: bold;
+}
+header > .tren {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > .tren > .logo {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+
+
+header > .tren > .login {
+    width: 10%;
+    height: 100%;
+    text-align: right;
+}
+
+header > .tren > .register {
+    width: 10%;
+    height: 100%;
+    text-align: center;
+}
+
+form button {
+    background-color: #DF1C12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nút đăng nhập */
+form button:hover {
+    background-color: #B60D0D;
+}
+header > .menu {
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    background-color: #DF1C12;
+    color: white;
+}
+
+.menu nav li:hover {
+    color: white; /* Màu sắc khi hover */
+    background:#B60D0D;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s ease; /* Hiệu ứng chuyển động màu khi hover */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    grid-row-start: 3;
+}
+
+.footer-section {
+    flex: 1;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 14px;
+}
+
+.footer-section img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.banner{
+    margin: 0;
+    padding: 0;
+}
+label{
+    font-size: 20px;
+}
+
+
+

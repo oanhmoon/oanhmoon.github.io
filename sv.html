@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danh sách sinh viên</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* CSS cho giao diện */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    tr{
+        text-align: center;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    .action-buttons button {
+        margin-right: 5px;
+    }
+    
+    .button{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: red;
+        color: #ffffff;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    #searchInput{
+        width: 300px;
+        height:auto;
+    }
+    main{
+        height: 550px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <div class="tren">
+            <div class="logo">
+                <table>
+                    <tbody><tr>
+                        <td>
+                            <img src="images/logo.png" alt="Logo" style="height: 100px;">
+                        </td>
+                        <td style="text-align: left; color: black;">
+                            <p id="name">
+                                Posts and Telecommunications Institute of Technology
+                            </p>
+                            Hệ thống thi trắc nghiệm trực tuyến PTIT
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+            
+        </div>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="them_moi.html">Thêm sinh viên</a>
+                    </li>
+                    <li>
+                        <a href="sinhvien.html">Xem kết quả</a>
+                    </li>
+                    <li>
+                        <a href="chinh.html">Trang chủ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+      </header>
+      <main>
+<div id="studentList">
+    <h1>Danh sách sinh viên</h1>
+    
+    <br>
+    <br>
+    <input type="text" id="searchInput" placeholder="Tìm kiếm theo tên hoặc mã sinh viên">
+    <button onclick="searchStudent()">Tìm kiếm</button>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Họ và tên</th>
+                <th>Mã sinh viên</th>
+                <th>Lớp</th>
+                <th>Thao tác</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+            <!-- Danh sách sinh viên sẽ được thêm vào đây -->
+        </tbody>
+    </table>
+</div>
+      </main>
+<script src="sv.js"></script>
+<footer>
+    <div class="footer-section">
+        <h2>Liên Hệ</h2>
+        <p>Email: nhom12web@gmail.com</p>
+        <p>Điện thoại: (123) 456-7890</p>
+    </div>
+    <div class="footer-section">
+        <h2>Hỗ Trợ</h2>
+        <p>Email: support12@gmail.com</p>
+        <p>Hotline: 24/7</p>
+    </div>
+    <div class="footer-section">
+        <h2>Giải Đáp</h2>
+        <p>Xem FAQ hoặc liên hệ trực tiếp.</p>
+    </div>
+    <div class="footer-section">
+        <h2>Địa Chỉ</h2>
+        <p>Km10, Nguyễn Trãi, Hà Đông, Hà Nội</p>
+    </div>
+    <div class="footer-section">
+        <h2>Face</h2>
+        <a href="https://www.facebook.com/example" target="_blank">
+            <img src="images/face-icon.jpg" alt="Facebook">
+        </a>
+    </div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
