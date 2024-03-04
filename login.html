@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Phiếu khảo sát</h2>
+        <form id="loginForm" onsubmit="return handleLogin()">
+            <h4>Họ và tên:</h4>
+            <input type="text" id="fullName" placeholder="Ho va ten" required>
+            <br>
+            <br>
+            <h4>Ngày tháng năm sinh:</h4>
+            <input type="date" id="dob" placeholder="Ngay thang nam sinh" required>
+            <br>
+            <br>
+            <h4>Căn cước công dân:</h4>
+            <input type="text" id="cccd" placeholder="Can cuoc cong dan" required>
+            <br>
+            <br>
+            <h4>Địa chỉ thường trú:</h4>
+            <input type="text" id="address" placeholder="Dia chi thuong tru" required>
+            <br>
+            <br>
+            <button type="submit">Tiếp tục</button>
+        </form>
+    </div>
+    <script>
+        function handleLogin(){
+            var fullName = document.getElementById('fullName').value;
+            var dob = document.getElementById('dob').value;
+            var cccd = document.getElementById('cccd').value;
+            var address = document.getElementById('address').value;
+
+            if(fullName && dob && cccd && address){
+                window.location.href ='exam.html';
+            }else{
+                alert('Vui long dien day du thong tin dang nhap');
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>
